@@ -8,5 +8,9 @@
 
 <body>
 <h1>首页</h1>
+<div id="datetime">
+    <script>
+        setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+    </script>
 </body>
 </html>
