@@ -1,0 +1,68 @@
+body,td,div,form,p,select,textarea,option{font: 9pt Tahoma, verdana, 宋体;}
+body {margin:0;
+font-family:Verdana;
+font-size:9pt;
+}
+
+input{FONT-SIZE: 9pt; 
+LINE-HEIGHT: 15px;
+border-width: 1; 
+FONT-FAMILY: Tahoma,Verdana;
+border-color: #bfbfbf; 
+background: #ffffff; 
+}
+
+
+
+
+a:link{text-decoration:none;color:#000000;}
+a:visited{text-decoration:none;color:#000000;}
+a:active{TEXT-DECORATION:none;color:#000000;}
+a:hover{COLOR:red; TEXT-DECORATION: underline}
+
+td{BORDER-TOP: 0px;}
+
+.caption {font-size: 9pt; COLOR: black; FILTER: glow(color=#ffffff,strength=2) dropshadow(color=#aaaaaa,offx=1, offy=1, positive=2); HEIGHT: 20px; MARGIN: 0px; TEXT-DECORATION: none }
+
+td.ejoebg { background-image: url(lbg.gif); height:25}
+td.ejoebar { background-image: url(lbg.gif); }
+.ejoetable1 { width:98%; border: 1px #b0bec7 solid; background-color: #FFFFFF; }
+.ejoetable2 { width:98%; border: 1px #b0bec7 solid; background-color: #EFEFEF; } 
+.ejoetable3 { width:100%; border: 1px #b0bec7 solid; background-color: #EFEFEF; } 
+.ejoetable4 { width:98%; border: 1px #b0bec7 solid;  } 
+.ejoetable5 { background-image: url(lbg.gif);}
+
+.menuskin {
+	BORDER-RIGHT: #999999 1px solid;
+	BORDER-TOP: #eeeeee 1px solid;
+	BORDER-LEFT: #eeeeee 1px solid;
+	BORDER-BOTTOM: #999999 1px solid;
+	BACKGROUND-IMAGE: url(ShowMenu.Gif);
+	FILTER: alpha(opacity=85)progid:DXImageTransform.Microsoft.Shadow(Color=#999999,Direction=120,strength=4);
+	POSITION: absolute;
+	VISIBILITY: hidden;
+}
+.menuitems {
+	PADDING-RIGHT: 1px;
+	PADDING-TOP: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-BOTTOM: 1px;
+	MARGIN: 2px;
+	font-size:9pt;
+	line-height:14pt;
+}
+#mouseoverstyle {
+	PADDING-RIGHT: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-BOTTOM: 1px;
+	PADDING-TOP: 1px;
+	BACKGROUND-COLOR: #698CC3;
+}
+#mouseoverstyle A:hover {COLOR:ffffff;TEXT-DECORATION: none}
+.menuskin A {PADDING-RIGHT:10px;PADDING-LEFT:20px;}
+.sbbstime{color:#FF8C08;font-size:8pt;margin-right:10px;}
+/* ====版规样式==== */
+.rule{margin:2px;padding:10px;background:#f5f5f5;border:1px dotted #c8c8c8;}
+
+#pagetop{background:url(logobg.gif) left;border:1px solid #b0bec7;margin:10px;}
+#menubar{float:right;margin:50px 5px 0 0;}
