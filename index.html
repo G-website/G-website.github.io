@@ -42,7 +42,18 @@
     <button>译林六上词汇表</button>
 </a>
 
-<audio src="music.mp3" id="aud" autoplay="autoplay" controls="controls" preload="auto"></audio>
+<audio autoplay="autopaly" loop="loop" id="audios">
+    <source src="music.mp3" type="audio/mp3" />
+</audio>
+ 
+<script>
+// 将以下代码添加到js入口函数内即可
+document.addEventListener('touchstart', function() {
+    document.getElementById('audios').play()
+})
+ 
+</script>
+
 
 
 </html>
