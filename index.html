@@ -15,5 +15,24 @@
 
 <script  src="js/script.js"></script>
 
+<audio autoplay="autopaly" loop="loop" id="audios">
+    <source src="m.mp3" type="audio/mp3" />
+</audio>
+ 
+<script>
+document.addEventListener('touchstart', function() {
+    document.getElementById('audios').play()
+})
+ 
+</script>
+
+<script>
+// 这里使用了微信自带的WeixinJSBridgeReady事件
+document.addEventListener('WeixinJSBridgeReady', function() {
+    document.getElementById('audios').play()
+})
+ 
+</script>
+
 </body>
 </html>
