@@ -2,12 +2,6 @@
 <html lang="zh">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="format-detection" content="telephone=no">
 <title>首页</title>
 <style type="text/css">
 	.scroll{
@@ -20,17 +14,10 @@
     right:0;
 }
 </style>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<noscript><iframe src="*.*"></iframe></noscript>
-<script LANGUAGE="JavaScript"> 
-function click() { if (event.button==2) 
-{alert(不好意思，此站禁止下载图片。); } } document.οnmοusedοwn=click
-</script>
-
 </head>
 
 
-<body οncοntextmenu="self.event.returnValue=false" onselectstart="return false" background="bg.jpg">
+<body background="bg.jpg" οncοntextmenu="self.event.returnValue=false" onselectstart="return false" style="CURSOR: url(//g-website.github.io/cur.cur)">
 <table border οncοntextmenu="return(false)"></table>
 <h1>首页</h1>
 <hr>
@@ -92,38 +79,4 @@ document.addEventListener('WeixinJSBridgeReady', function() {
  
 </script>
 </body>
-<script type="text/javascript">
-    //禁止下拉
-    var overscroll = function(el) {
-  el.addEventListener('touchstart', function() {
-    var top = el.scrollTop
-      , totalScroll = el.scrollHeight
-      , currentScroll = top + el.offsetHeight
-    //If we're at the top or the bottom of the containers
-    //scroll, push up or down one pixel.
-    //
-    //this prevents the scroll from "passing through" to
-    //the body.
-    if(top === 0) {
-      el.scrollTop = 1
-    } else if(currentScroll === totalScroll) {
-      el.scrollTop = top - 1
-    }
-  })
-  el.addEventListener('touchmove', function(evt) {
-    //if the content is actually scrollable, i.e. the content is long enough
-    //that scrolling can occur
-    if(el.offsetHeight < el.scrollHeight)
-      evt._isScroller = true
-  })
-}
-overscroll(document.querySelector('.scroll'));
-document.body.addEventListener('touchmove', function(evt) {
-  //In this case, the default behavior is scrolling the body, which
-  //would result in an overflow.  Since we don't want that, we preventDefault.
-  if(!evt._isScroller) {
-    evt.preventDefault()
-  }
-})
-</script>
 </html>
