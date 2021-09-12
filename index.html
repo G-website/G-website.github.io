@@ -1,38 +1,109 @@
-<!DOCTYPE html>
-<html lang="zh" >
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="refresh" content="3;URL=main.html">
-<title>首页</title>
-<link rel="shortcut icon" href="//g-website.github.io/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="css/style.css">
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
 
-</head>
-<body>
+    </head>
+    <body data-smooth-scroll-offset="77">
+        <div class="nav-container"> </div>
+        <div class="main-container">
+            <section class="bg--primary space--xxs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>首页</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="space--sm">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <div class="tabs-container tabs--folder">
+                                <ul class="tabs">
+                                    <li class="active">
+                                        <div class="tab__title"> <span class="h5"><p>MD5工具</p></span> <span class="label">⭐</span> </div>
+                                        <div class="tab__content">
+                                            <p class="lead"><a href="https://g-website.github.io/file2md5">
+								文件转md5工具</a></p>
+                                            <p class="lead"> 这是一个文件转md5工具，它可以帮助你将文件转化为md5。<br>改编自Percy(www.cnblogs.com/Percy_Lee)。<br></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab__title"> <span class="h5"><p>说明文档</p></span> </div>
+                                        <div class="tab__content">
+                                            <p class="lead"> Scratch&nbsp; 中文&nbsp;</p>
+                                            <p class="lead"><a href="https://g-website.github.io/docs/scratch/HandSpeedTestSystem/zh/">
+									手速测试系统</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab__title"> <span class="h5"><p>玩游戏</p></span> </div>
+                                        <div class="tab__content">
+                                            <p class="lead"><a href="http://g-website.github.io/game/brick/index.html">
+									打砖块<br></a><a href="g-website.github.io/fldzz.html">飞龙大作战</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab__title"> <span class="h5"><p>数学工具</p></span> </div>
+                                        <div class="tab__content">
+                                            <p class="lead"><a href="https://g-website.github.io/gn/gn.html">
+									常用质数表</a>
+                                                <a href="http://g-website.github.io/game/brick/index.html"><br></a><br></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab__title"> <span class="h5"><p>英语工具</p></span> </div>
+                                        <div class="tab__content">
+                                            <p class="lead"><a href="http://g-website.github.io/yl6a/index.html">译林六上词汇表</a>
+                                                <a href="http://g-website.github.io/game/brick/index.html"><br></a><br></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab__title"> <span class="h5"><p>Scratch</p></span> </div>
+                                        <div class="tab__content">
+                                            <p class="lead"><a href="http://g-website.github.io/scratch/">用网页版Scratch</a>
+                                                <a href="http://g-website.github.io/game/brick/index.html"><br></a><br></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab__title"> <span class="h5"><p>公告</p></span> </div>
+                                        <div class="tab__content">
+                                            <p class="lead"><a href="https://g-website.github.io/gpn/gpn-1.html">公告（0）</a>
+                                                <a href="http://g-website.github.io/game/brick/index.html"><br></a><br></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab__title"> <span class="h5"><p>博客</p></span> </div>
+                                        <div class="tab__content">
+                                            <p class="lead"><a href="https://g-website.github.io/blog/">博客</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab__title"> <span class="h5"><p>学习</p></span> </div>
+                                        <div class="tab__content">
+                                            <p class="lead"><a href="https://g-website.github.io/studying/Markdown/">Markdown的用法</a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
 
-<canvas id="canvas"></canvas>
-<h1 id="title">首页</h1>
+    </body>
 
-<script  src="js/script.js"></script>
-
-<audio autoplay="autopaly" id="audios">
-    <source src="m.mp3" type="audio/mp3" />
-</audio>
- 
-<script>
-document.addEventListener('touchstart', function() {
-    document.getElementById('audios').play()
-})
- 
-</script>
-
-<script>
-// 这里使用了微信自带的WeixinJSBridgeReady事件
-document.addEventListener('WeixinJSBridgeReady', function() {
-    document.getElementById('audios').play()
-})
- 
-</script>
-
-</body>
 </html>
